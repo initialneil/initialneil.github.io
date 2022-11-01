@@ -16,6 +16,6 @@ I'm the **cofounder and CTO** of [Zhuhai Prometheus Vision](https://www.prometh.
 |:-------------|:------------------|:------|
 | ![obsidian-pro](/assets/img/obsidian-pro.png) | ![studio](/assets/img/kandao-studio.jpg) | ![meeting](/assets/img/meeting.jpg)  |
 
-- From 2018, we start to build the best Volumetric Video in China. I'm specialized in vision system architect, cuda acceleration, non-linear optimization, stereo, NeRF, etc.
+- Since 2018, I cofounded Zhihai Prometheus Vision. We started to build the best Volumetric Video in China. I'm specialized in vision system architect, cuda acceleration, non-linear optimization, stereo, NeRF, etc.
 - In 2022, I was appointed *off-campus supervisor* of Tsinghua Shenzhen International Graduate School.
 
