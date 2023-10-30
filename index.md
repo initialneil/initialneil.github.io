@@ -25,7 +25,7 @@ I am currently a **PhD student** in CMA, HKUST(GZ). My supervisor is [Prof. Kang
 -----
 Publication
 
-Patchmatch Stereo++: Patchmatch Binocular Stereo with Continuous Disparity Optimization [ACM](https://dl.acm.org/doi/10.1145/3581783.3611862) <br>
+Patchmatch Stereo++: Patchmatch Binocular Stereo with Continuous Disparity Optimization [[MM '23]](https://dl.acm.org/doi/10.1145/3581783.3611862) <br>
 Wenjia Ren*, Qingmin Liao, Zhijing Shao*, Xiangru Lin*, Xin Yue, Yu Zhang, Zongqing Lu (*equal contribution)
 
 
