@@ -4,7 +4,7 @@ layout: default
 
 I'm the **cofounder and CTO** of [Zhuhai Prometheus Vision](https://www.prometh.xyz) focused on Volumetric Video.
 
-I am doing my **PhD** in HKUST(GZ) under the supervision of [Prof. Kang ZHANG](https://facultyprofiles.hkust-gz.edu.cn/thrust-faculties?code=10011A10000000000H2A).
+I am currently a **PhD student** in CMA, HKUST(GZ). My supervisor is [Prof. Kang ZHANG](https://facultyprofiles.hkust-gz.edu.cn/thrust-faculties?code=10011A10000000000H2A).
 
 | Camera Array | Textured          | Mesh |
 |:-------------|:------------------|:------|
@@ -21,4 +21,11 @@ I am doing my **PhD** in HKUST(GZ) under the supervision of [Prof. Kang ZHANG](h
 
 - Since 2018, I cofounded Zhuhai **Prometheus Vision** as CTO. We started to build the best Volumetric Video solution in industry. I'm specialized in vision system architect, cuda acceleration, non-linear optimization, stereo, neural based rendering, etc.
 - In 2022, I was appointed *off-campus supervisor* of **Tsinghua Shenzhen International Graduate School**.
+
+-----
+Publication
+
+Patchmatch Stereo++: Patchmatch Binocular Stereo with Continuous Disparity Optimization [ACM](https://dl.acm.org/doi/10.1145/3581783.3611862) <br>
+Wenjia Ren*, Qingmin Liao, Zhijing Shao*, Xiangru Lin*, Xin Yue, Yu Zhang, Zongqing Lu (*equal contribution)
+
 
