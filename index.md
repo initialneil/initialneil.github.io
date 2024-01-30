@@ -4,7 +4,7 @@ layout: default
 
 I'm the **cofounder and CTO** of [Zhuhai Prometheus Vision](https://www.prometh.xyz) focused on Volumetric Video.
 
-I am currently a **PhD student** in CMA, HKUST(GZ). My supervisor is [Prof. Kang ZHANG](https://facultyprofiles.hkust-gz.edu.cn/thrust-faculties?code=10011A10000000000H2A).
+I am currently a **PhD student** in CMA, HKUST(GZ), supervised by [Prof. Kang ZHANG](https://facultyprofiles.hkust-gz.edu.cn/thrust-faculties?code=10011A10000000000H2A) and [Prof. Zeyu WANG](https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/WANG-Zeyu/zeyuwang).
 
 | Camera Array | Textured          | Mesh |
 |:-------------|:------------------|:------|
