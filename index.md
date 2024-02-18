@@ -23,9 +23,14 @@ I am currently a **PhD student** in CMA, HKUST(GZ), supervised by [Prof. Kang ZH
 - In 2022, I was appointed *off-campus supervisor* of **Tsinghua Shenzhen International Graduate School**.
 
 -----
-Publication
+Publication [DBLP](https://dblp.org/pid/359/4184.html)
 
-Patchmatch Stereo++: Patchmatch Binocular Stereo with Continuous Disparity Optimization [[MM '23]](https://dl.acm.org/doi/10.1145/3581783.3611862) <br>
-Wenjia Ren\*, Qingmin Liao, Zhijing Shao\*, Xiangru Lin\*, Xin Yue, Yu Zhang, Zongqing Lu (\*equal contribution)
+- **Patchmatch Stereo++: Patchmatch Binocular Stereo with Continuous Disparity Optimization** [[MM '23]](https://dl.acm.org/doi/10.1145/3581783.3611862) <br>
+Wenjia Ren\*, Qingmin Liao, **Zhijing Shao**\*, Xiangru Lin\*, Xin Yue, Yu Zhang, Zongqing Lu (\*equal contribution)
+
+- **Introducing Massive Open Metaverse Course and Its Enabling Technology** <br>
+[IEEE Trans. Learn. Technol. 16(6): 1154-1164 (2023)](https://ieeexplore.ieee.org/document/10164142) <br>
+Kang Zhang, **Zhijing Shao**, Yun Lu, Ying Yu, Wei Sun, Zeyu Wang  <br>
+
 
 
