@@ -25,6 +25,10 @@ I am currently a **PhD student** in CMA, HKUST(GZ), supervised by [Prof. Kang ZH
 -----
 Publication [DBLP](https://dblp.org/pid/359/4184.html)
 
+- **SplattingAvatar: Realistic Real-Time Human Avatars
+with Mesh-Embedded Gaussian Splatting** [CVPR2024] (code comming soon) <br>
+**Zhijing Shao**, Zhaolong Wang, Zhuang Li, Duotun Wang, Xiangru Lin, Yu Zhang, Mingming Fan, Zeyu Wang
+
 - **Patchmatch Stereo++: Patchmatch Binocular Stereo with Continuous Disparity Optimization** [[MM '23]](https://dl.acm.org/doi/10.1145/3581783.3611862) <br>
 Wenjia Ren\*, Qingmin Liao, **Zhijing Shao**\*, Xiangru Lin\*, Xin Yue, Yu Zhang, Zongqing Lu (\*equal contribution)
 
