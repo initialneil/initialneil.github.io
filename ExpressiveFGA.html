@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projectpage of Expressive Full-body Gaussian Avatars</title>
+    <!-- Bootstrap -->
+    <link href="projectpages/ExpressiveFGA/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>2D Talking Face is All You Need</h2>
+            <h2>to Reenact 3D Expressive Full-body Avatars</h2>
+            <!-- <h4 style="color:#5a6268;">CVPR 2024</h4> -->
+            <hr>
+
+            <!-- <h6> 
+              <a href="https://initialneil.github.io/" target="_blank">Zhijing Shao</a><sup>1,2</sup>,
+              Zhaolong Wang,
+              Zhuang Li,
+              <a href="https://duotun.github.io/" target="_blank">Duotun Wang</a><sup>1</sup>,
+              <a href="https://dblp.org/pid/237/9802.html" target="_blank">Xiangru Lin</a><sup>2</sup>,
+              Yu Zhang,
+              <a href="https://www.mingmingfan.com/" target="_blank">Mingming Fan</a><sup>1,3</sup>,
+              <a href="https://cislab.hkust-gz.edu.cn/members/zeyu-wang/" target="_blank">Zeyu Wang</a><sup>1,3*</sup>
+            </h6> -->
+
+            <p>
+              <sup>1</sup>The Hong Kong University of Science and Technology (Guangzhou)
+              <br>
+              <sup>2</sup><a href="https://www.prometh.xyz/" target="_blank">Prometheus Vision Technology Co., Ltd.</a>
+              <br>
+              <sup>3</sup>The Hong Kong University of Science and Technology
+            	<br>
+              <sup>*</sup>
+              Corresponding author @ 
+              <a href="https://cislab.hkust-gz.edu.cn/" target="_blank">Creative Intelligence and Synergy Lab</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light disabled" href="https://arxiv.org/abs/2403.05087" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light disabled" href="https://www.youtube.com/watch?v=IzC-fLvdntA" role="button" target="_blank">
+                  <i class="fa fa-youtube"></i> Video</a></p>
+            </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light disabled" href="https://github.com/initialneil/SplattingAvatar" role="button" target="_blank">
+                    <i class="fa fa-github"></i> Code</a></p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+          	
+            <video autoplay loop muted style="outline:none; width:60%">
+              <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/EFGA-Teaser1.mp4" type="video/mp4" />
+              EFGA-Teaser1
+            </video>
+
+            <h6 style="color:#8899a5">
+              We present <b>Expressive Full-body Gaussian Avatars</b>, 
+              the first 3D Gaussian Splatting (3DGS) based modeling of 
+              <br>
+              full-body avatars with rich facial expressions.
+            </h6>
+          	<img src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/Framework-v1.PNG" width="100%" alt=""/>
+              <br><br>
+            <p class="text-left">
+              We present Expressive Full-body Gaussian Avatars (EFGA), the first 3D Gaussian Splatting (3DGS) based modeling of full-body avatars with rich facial expressions.
+Trained on synchronized multi-view videos of the given subject, our method learns a conditional variational autoencoder that takes both the body motion and facial expression as driving signals, to generate Gaussian maps in the UV layout.
+For the driving signal of facial expressions, instead of the commonly used 3DMM in 3D head avatars, we propose to adopt the expression latent space trained on 2D portrait images, bridging the gap between 2D talking faces and 3D expressive avatars. 
+Leveraging the rendering capability of 3DGS and the rich expressiveness of the expression latent space, the learnt avatars can be reenacted to reproduce photorealistic image quality with subtle and accurate facial expressions.
+Experiments on the existing dataset of expressionless full-body avatars and our newly proposed dataset of expressive full-body avatars both show the efficacy of our method. 
+We also demonstrate the audio-driven extension of our method with the help of 2D talking faces, opening new possibilities to interactive AI agents.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+
+    <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>DREAMS Avatar Dataset</h3>
+            <hr style="margin-top:0px">
+            <p class="text-left">
+              We propose DREAMS Avatar Dataset, including multi-view captures of 6 subjects. 
+              Each subject performs two sequences. The first sequence is of standard body motions and required facial expressions of smile, laugh, angary, superise, etc,. 
+              The second sequence is a freestyle.
+            </p>
+
+            <h5 class="text-left">Sequence 1 - render by EFGA</h5>
+            <video autoplay loop muted style="outline:none; width:100%">
+              <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1-replay.mp4" type="video/mp4" />
+              C1-replay
+            </video>
+            <!-- <p>&nbsp;</p>
+            <p>&nbsp;</p> -->
+
+            <h5 class="text-left">Sequence 2 - render by EFGA</h5>
+            <table style="outline:none; width:100%">
+              <tbody>
+                <tr>
+                  <td>
+                    <video autoplay loop muted style="outline:none; width:100%">
+                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P1C2.mp4" type="video/mp4" />
+                      C1_80w_P1C2
+                    </video>
+                  </td>
+                  <td>
+                    <video autoplay loop muted style="outline:none; width:100%">
+                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P2C2.mp4" type="video/mp4" />
+                      C1_80w_P2C2
+                    </video>
+                  </td>
+                  <td>
+                    <video autoplay loop muted style="width:100%">
+                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P3C2.mp4" type="video/mp4" />
+                      C1_80w_P3C2
+                    </video>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Person 1 Sequence 2</th>
+                  <th scope="row">Person 2 Sequence 2</th>
+                  <th scope="row">Person 3 Sequence 2</th>
+                </tr>
+                <tr>
+                  <td>
+                    <video autoplay loop muted style="width:100%">
+                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P4C2.mp4" type="video/mp4" />
+                      C1_80w_P4C2
+                    </video>
+                  </td>
+                  <td>
+                    <video autoplay loop muted style="width:100%">
+                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P5C2.mp4" type="video/mp4" />
+                      C1_80w_P5C2
+                    </video>
+                  </td>
+                  <td>
+                    <video autoplay loop muted style="width:100%">
+                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P6C2.mp4" type="video/mp4" />
+                      C1_80w_P6C2
+                    </video>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Person 4 Sequence 2</th>
+                  <th scope="row">Person 5 Sequence 2</th>
+                  <th scope="row">Person 6 Sequence 2</th>
+                </tr>
+              </tbody>
+            </table>
+
+
+          </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Method</h3>
+            <hr style="margin-top:0px">
+            <img src="https://github.com/initialneil/SplattingAvatar/blob/master/assets/SplattingAvatar-framework.jpg?raw=true" width="100%" alt=""/>
+            <p>&nbsp;</p>
+            <p class="text-left">
+              The pipeline of our method. SplattingAvatar learns 3D Gaussians with trainable embedding on the canonical mesh. The motion and deformation of the mesh explicitly bring the Gaussians to the posed space for differentiable rasterization. Both the Gaussians and embedding parameters are optimized during training. The position µ is the barycentric point P plus a displacement d along the interpolated normal vector n. Pose-dependent quaternion and scaling (δq, δs) and pose-invariant quaternion, scaling, opacity, and color (q, s, o, c) together define the properties of the Gaussians
+            </p>
+            <p>&nbsp;</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <br><br> -->
+
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Demo Video</h3>
+            <hr style="margin-top:0px">
+              If the video does not play, please click 
+              <a href="https://github.com/initialneil/SplattingAvatar/blob/master/assets/[CVPR2024]SplattingAvatar.mp4?raw=true" target="_blank">here</a> 
+              to watch it.
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/IzC-fLvdntA?si=CAeZL0-wIN7Oasms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br> -->
+
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Running in Unity</h3>
+            <hr style="margin-top:0px">
+            <img src="https://github.com/initialneil/SplattingAvatar/blob/master/assets/SplattingAvatar-unity.gif?raw=true" width="100%" alt=""/>
+          </div>
+      </div>
+    </div>
+  </section>
+  <br><br> -->
+
+
+  <!-- citing -->
+  <!-- <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>
+  @inproceedings{SplattingAvatar:CVPR2024,
+    title = {{SplattingAvatar: Realistic Real-Time Human Avatars with Mesh-Embedded Gaussian Splatting}},
+    author = {Shao, Zhijing and Wang, Zhaolong and Li, Zhuang and Wang, Duotun and Lin, Xiangru and Zhang, Yu and Fan, Mingming and Wang, Zeyu},
+    booktitle = {Computer Vision and Pattern Recognition (CVPR)},
+    year = {2024}
+  }
+</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div> -->
+
+  <footer class="text-center" style="margin-bottom:10px">
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+  </footer>
+
+</body>
+</html>
