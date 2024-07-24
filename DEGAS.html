@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projectpage of Expressive Full-body Gaussian Avatars</title>
+    <title>Projectpage of DEGAS (Detailed Expressions on Full-body Gaussian Avatars)</title>
     <!-- Bootstrap -->
-    <link href="projectpages/ExpressiveFGA/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="projectpages/DEGAS/css/bootstrap-4.4.1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   </head>
 
@@ -75,20 +75,20 @@
             <hr style="margin-top:0px">
           	
             <video controls autoplay loop muted style="outline:none; width:60%">
-              <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/EFGA-Teaser1.mp4" type="video/mp4" />
-              EFGA-Teaser1
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/Teaser.mp4" type="video/mp4" />
+              DEGAS-Teaser1
             </video>
 
             <h6 style="color:#8899a5">
-              We present <b>Expressive Full-body Gaussian Avatars</b>, 
+              We present <b>DEGAS</b> (Detailed Expressions on Full-body Gaussian Avatars), 
               the first 3D Gaussian Splatting (3DGS) based modeling of 
               <br>
               full-body avatars with rich facial expressions.
             </h6>
-          	<img src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/Framework-v1.PNG" width="100%" alt=""/>
+          	<img src="https://github.com/initialneil/DEGAS/raw/master/assets/Framework-v1.PNG" width="100%" alt=""/>
               <br><br>
-            <p class="text-left">
-              We present Expressive Full-body Gaussian Avatars (EFGA), the first 3D Gaussian Splatting (3DGS) based modeling of full-body avatars with rich facial expressions.
+            <h6 class="text-left">
+              We present <b>DEGAS</b> (<b>D</b>etailed <b>E</b>xpressions on Full-body <b>G</b>aussian <b>A</b>vatar<b>s</b>), the first 3D Gaussian Splatting (3DGS) based modeling of full-body avatars with rich facial expressions.
 Trained on synchronized multi-view videos of the given subject, our method learns a conditional variational autoencoder that takes both the body motion and facial expression as driving signals, to generate Gaussian maps in the UV layout.
 For the driving signal of facial expressions, instead of the commonly used 3DMM in 3D head avatars, we propose to adopt the expression latent space trained on 2D portrait images, bridging the gap between 2D talking faces and 3D expressive avatars. 
 Leveraging the rendering capability of 3DGS and the rich expressiveness of the expression latent space, the learnt avatars can be reenacted to reproduce photorealistic image quality with subtle and accurate facial expressions.
@@ -110,37 +110,37 @@ We also demonstrate the audio-driven extension of our method with the help of 2D
             <hr style="margin-top:0px">
             <p class="text-left">
               We propose DREAMS Avatar Dataset, including multi-view captures of 6 subjects. 
-              Each subject performs two sequences. The first sequence is of standard body motions and required facial expressions of smile, laugh, angary, superise, etc,. 
+              Each subject performs two sequences. The first sequence is of standard body motions and required facial expressions including smile, laugh, angry, surprise, etc,. 
               The second sequence is a freestyle.
             </p>
 
-            <h5 class="text-left">Sequence 1 - render by EFGA</h5>
+            <h5 class="text-left">Sequence 1 - render by DEGAS</h5>
             <video controls style="outline:none; width:100%">
-              <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1-replay.mp4" type="video/mp4" />
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1-replay.mp4" type="video/mp4" />
               C1-replay
             </video>
             <!-- <p>&nbsp;</p>
             <p>&nbsp;</p> -->
 
-            <h5 class="text-left">Sequence 2 - render by EFGA</h5>
+            <h5 class="text-left">Sequence 2 - render by DEGAS</h5>
             <table style="outline:none; width:100%">
               <tbody>
                 <tr>
                   <td>
                     <video controls autoplay loop muted style="outline:none; width:100%">
-                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P1C2.mp4" type="video/mp4" />
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P1C2.mp4" type="video/mp4" />
                       C1_80w_P1C2
                     </video>
                   </td>
                   <td>
                     <video controls autoplay loop muted style="outline:none; width:100%">
-                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P2C2.mp4" type="video/mp4" />
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P2C2.mp4" type="video/mp4" />
                       C1_80w_P2C2
                     </video>
                   </td>
                   <td>
                     <video controls autoplay loop muted style="width:100%">
-                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P3C2.mp4" type="video/mp4" />
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P3C2.mp4" type="video/mp4" />
                       C1_80w_P3C2
                     </video>
                   </td>
@@ -153,19 +153,19 @@ We also demonstrate the audio-driven extension of our method with the help of 2D
                 <tr>
                   <td>
                     <video controls autoplay loop muted style="width:100%">
-                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P4C2.mp4" type="video/mp4" />
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P4C2.mp4" type="video/mp4" />
                       C1_80w_P4C2
                     </video>
                   </td>
                   <td>
                     <video controls autoplay loop muted style="width:100%">
-                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P5C2.mp4" type="video/mp4" />
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P5C2.mp4" type="video/mp4" />
                       C1_80w_P5C2
                     </video>
                   </td>
                   <td>
                     <video controls autoplay loop muted style="width:100%">
-                      <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/C1_80w_P6C2.mp4" type="video/mp4" />
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P6C2.mp4" type="video/mp4" />
                       C1_80w_P6C2
                     </video>
                   </td>
@@ -194,7 +194,7 @@ We also demonstrate the audio-driven extension of our method with the help of 2D
             <hr style="margin-top:0px">
             <h5 class="text-left">All Reenacted by Person 1's Sequence 2</h5>
             <video controls style="width:100%">
-              <source src="https://github.com/initialneil/ExpressiveFGA/raw/master/assets/P1C2-P123456.mp4" type="video/mp4" />
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/P1C2-P123456.mp4" type="video/mp4" />
               P1C2-P123456
             </video>
             <p>&nbsp;</p>
