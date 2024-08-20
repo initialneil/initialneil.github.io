@@ -16,21 +16,23 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2>2D Talking Face is All You Need</h2>
-            <h2>to Reenact 3D Expressive Full-body Avatars</h2>
-            <!-- <h4 style="color:#5a6268;">CVPR 2024</h4> -->
+            <h2>DEGAS: <b>D</b>etailed <b>E</b>xpressions on Full-Body <b>G</b>aussian <b>A</b>vatar<b>s</b></h2>
+            <!-- <h4 style="color:#5a6268;">XXXX XXXX</h4> -->
             <hr>
 
-            <!-- <h6> 
+            <h6> 
               <a href="https://initialneil.github.io/" target="_blank">Zhijing Shao</a><sup>1,2</sup>,
-              Zhaolong Wang,
-              Zhuang Li,
               <a href="https://duotun.github.io/" target="_blank">Duotun Wang</a><sup>1</sup>,
-              <a href="https://dblp.org/pid/237/9802.html" target="_blank">Xiangru Lin</a><sup>2</sup>,
-              Yu Zhang,
-              <a href="https://www.mingmingfan.com/" target="_blank">Mingming Fan</a><sup>1,3</sup>,
+              <a href="https://github.com/LetTucee-T" target="_blank">Qing-Yao Tian</a><sup>2</sup>,
+              <a href="https://orcid.org/0009-0007-5760-4373" target="_blank">Yao-Dong Yang</a><sup>1</sup>,
+              <a href="https://hengyumeng.github.io/" target="_blank">Hengyu Meng</a><sup>1</sup>,
+              <br>
+              <a href="https://github.com/zcai0612" target="_blank">Zeyu Cai</a><sup>1</sup>,
+              <a href="https://openreview.net/profile?id=~BO_DONG15" target="_blank">Bo Dong</a><sup>4</sup>,
+              <a href="https://github.com/yuzhangiot/yuzhangiot/tree/main" target="_blank">Yu Zhang</a><sup>2</sup>,
+              <a href="https://cma.hkust-gz.edu.cn/people/kang-zhang/" target="_blank">Kang Zhang</a><sup>1,3</sup>,
               <a href="https://cislab.hkust-gz.edu.cn/members/zeyu-wang/" target="_blank">Zeyu Wang</a><sup>1,3*</sup>
-            </h6> -->
+            </h6>
 
             <p>
               <sup>1</sup>The Hong Kong University of Science and Technology (Guangzhou)
@@ -38,6 +40,8 @@
               <sup>2</sup><a href="https://www.prometh.xyz/" target="_blank">Prometheus Vision Technology Co., Ltd.</a>
               <br>
               <sup>3</sup>The Hong Kong University of Science and Technology
+            	<br>
+              <sup>4</sup>Swinburne University of Technology
             	<br>
               <sup>*</sup>
               Corresponding author @ 
@@ -53,10 +57,14 @@
               <div class="column">
                 <p class="mb-5"><a class="btn btn-large btn-light disabled" href="https://www.youtube.com/watch?v=IzC-fLvdntA" role="button" target="_blank">
                   <i class="fa fa-youtube"></i> Video</a></p>
-            </div>
+              </div>
               <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light disabled" href="https://github.com/initialneil/SplattingAvatar" role="button" target="_blank">
-                    <i class="fa fa-github"></i> Code</a></p>
+                    <i class="fa fa-github"></i> Code (Coming)</a></p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light disabled" href="https://github.com/initialneil/SplattingAvatar" role="button" target="_blank">
+                    <i class="fa fa-file-archive-o"></i> Dataset (Coming)</a></p>
               </div>
             </div>
             
@@ -75,25 +83,26 @@
             <hr style="margin-top:0px">
           	
             <video controls autoplay loop muted style="outline:none; width:60%">
-              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/Teaser.mp4" type="video/mp4" />
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/DEGAS-Teaser.mp4" type="video/mp4" />
               DEGAS-Teaser1
             </video>
 
             <h6 style="color:#8899a5">
-              We present <b>DEGAS</b> (Detailed Expressions on Full-body Gaussian Avatars), 
-              the first 3D Gaussian Splatting (3DGS) based modeling of 
+              We present <b>DEGAS</b> (Detailed Expressions on Full-Body Gaussian Avatars), 
+              the first 3D Gaussian Splatting (3DGS)-based modeling of 
               <br>
               full-body avatars with rich facial expressions.
             </h6>
-          	<img src="https://github.com/initialneil/DEGAS/raw/master/assets/Framework-v1.PNG" width="100%" alt=""/>
+          	<img src="https://github.com/initialneil/DEGAS/raw/master/assets/Framework.PNG" width="100%" alt=""/>
               <br><br>
             <h6 class="text-left">
-              We present <b>DEGAS</b> (<b>D</b>etailed <b>E</b>xpressions on Full-body <b>G</b>aussian <b>A</b>vatar<b>s</b>), the first 3D Gaussian Splatting (3DGS) based modeling of full-body avatars with rich facial expressions.
-Trained on synchronized multi-view videos of the given subject, our method learns a conditional variational autoencoder that takes both the body motion and facial expression as driving signals, to generate Gaussian maps in the UV layout.
-For the driving signal of facial expressions, instead of the commonly used 3DMM in 3D head avatars, we propose to adopt the expression latent space trained on 2D portrait images, bridging the gap between 2D talking faces and 3D expressive avatars. 
-Leveraging the rendering capability of 3DGS and the rich expressiveness of the expression latent space, the learnt avatars can be reenacted to reproduce photorealistic image quality with subtle and accurate facial expressions.
-Experiments on the existing dataset of expressionless full-body avatars and our newly proposed dataset of expressive full-body avatars both show the efficacy of our method. 
-We also demonstrate the audio-driven extension of our method with the help of 2D talking faces, opening new possibilities to interactive AI agents.
+              Although neural rendering has made significant advancements in creating lifelike, animatable full-body and head avatars, incorporating detailed expressions into full-body avatars remains largely unexplored.
+              We present DEGAS, the first 3D Gaussian Splatting (3DGS)-based modeling method for full-body avatars with rich facial expressions.
+              Trained on multiview videos of a given subject, our method learns a conditional variational autoencoder that takes both the body motion and facial expression as driving signals to generate Gaussian maps in the UV layout.
+              To drive the facial expressions, instead of the commonly used 3D Morphable Models (3DMMs) in 3D head avatars, we propose to adopt the expression latent space trained solely on 2D portrait images, bridging the gap between 2D talking faces and 3D avatars. 
+              Leveraging the rendering capability of 3DGS and the rich expressiveness of the expression latent space, the learned avatars can be reenacted to reproduce photorealistic rendering images with subtle and accurate facial expressions.
+              Experiments on an existing dataset and our newly proposed dataset of full-body talking avatars demonstrate the efficacy of our method. 
+              We also propose an audio-driven extension of our method with the help of 2D talking faces, opening new possibilities to interactive AI agents.
             </p>
         </div>
       </div>
@@ -102,7 +111,25 @@ We also demonstrate the audio-driven extension of our method with the help of 2D
   <br><br>
 
 
-    <section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Watch Video</h3>
+            <hr style="margin-top:0px">
+          	
+            <video controls style="outline:none; width:60%">
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/DEGAS.mp4" type="video/mp4" />
+              DEGAS Video
+            </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+
+  <section>
     <div class="container">
       <div class="row">
           <div class="col-12 text-center">
@@ -116,7 +143,7 @@ We also demonstrate the audio-driven extension of our method with the help of 2D
 
             <h5 class="text-left">Sequence 1 - render by DEGAS</h5>
             <video controls style="outline:none; width:100%">
-              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1-replay.mp4" type="video/mp4" />
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1-replay-s.mp4" type="video/mp4" />
               C1-replay
             </video>
             <!-- <p>&nbsp;</p>
@@ -188,18 +215,33 @@ We also demonstrate the audio-driven extension of our method with the help of 2D
 
   <section>
     <div class="container">
+
       <div class="row">
           <div class="col-12 text-center">
             <h3>Reenactment</h3>
             <hr style="margin-top:0px">
+
             <h5 class="text-left">All Reenacted by Person 1's Sequence 2</h5>
             <video controls style="width:100%">
-              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/P1C2-P123456.mp4" type="video/mp4" />
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/P1C2-P123456_extract_exp_C1C2_face_mix.mp4" type="video/mp4" />
               P1C2-P123456
             </video>
             <p>&nbsp;</p>
+
+            <h5 class="text-left">Audio-driven. Expressions generated by 
+              <a href="https://github.com/OpenTalker/SadTalker" target="_blank">SadTalker</a>
+              and extracted by 
+              <a href="https://github.com/OpenTalker/DPE" target="_blank">DPE</a>
+            </h5>
+            <video controls style="width:100%">
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/audio-driven.mp4" type="video/mp4" />
+              P1C2-P123456
+            </video>
+            <p>&nbsp;</p>
+
           </div>
       </div>
+      
     </div>
   </section>
   <br><br>
