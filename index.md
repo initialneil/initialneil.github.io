@@ -25,10 +25,22 @@ I am currently a **PhD student** in CMA, HKUST(GZ), supervised by [Prof. Kang ZH
 -----
 Publication [DBLP](https://dblp.org/pid/359/4184.html)
 
+- **DEGAS: Detailed Expressions on Full-Body Gaussian Avatars** [3DV2025] [project](https://initialneil.github.io/DEGAS.html)
+<br>
+**Zhijing Shao**,Duotun Wang, Qing-Yao Tian, Yao-Dong Yang, Hengyu Meng, Zeyu Cai, Bo Dong, Yu Zhang, Kang Zhang, Zeyu Wang
+
+- **HeadEvolver: Text to Head Avatars via Expressive and Attribute-Preserving Mesh Deformation** [3DV2025] [project](https://www.duotun-wang.co.uk/HeadEvolver/)
+<br>
+Duotun Wang, Hengyu Meng, Zeyu Cai, **Zhijing Shao**, Qianxi Liu, Lin Wang, Mingming Fan, Xiaohang Zhan, Zeyu Wang
+
 - **SplattingAvatar: Realistic Real-Time Human Avatars
 with Mesh-Embedded Gaussian Splatting** [CVPR2024] [code](https://github.com/initialneil/SplattingAvatar) [project](https://initialneil.github.io/SplattingAvatar)
 <br>
 **Zhijing Shao**, Zhaolong Wang, Zhuang Li, Duotun Wang, Xiangru Lin, Yu Zhang, Mingming Fan, Zeyu Wang
+
+- **DreamMapping: High-Fidelity Text-to-3D Generation via Variational Distribution Mapping** [PG2024]
+<br>
+Zeyu Cai, Duotun Wang, Yixun Liang, **Zhijing Shao**, Ying-Cong Chen, Xiaohang Zhan, Zeyu Wang
 
 - **SMPLX-Lite: A Realistic and Drivable Avatar Benchmark with Rich Geometry and Texture Annotations** [ICME2024]
 <br>
