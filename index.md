@@ -25,6 +25,10 @@ I am currently a **PhD student** in CMA, HKUST(GZ), supervised by [Prof. Kang ZH
 -----
 Publication [DBLP](https://dblp.org/pid/359/4184.html)
 
+- **Text2VDM: Text to Vector Displacement Maps for Expressive and Interactive 3D Sculpting** [ICCV2025] [arxiv](https://arxiv.org/abs/2502.20045)
+<br>
+Hengyu Meng, Duotun Wang, **Zhijing Shao**, Ligang Liu, Zeyu Wang
+
 - **DEGAS: Detailed Expressions on Full-Body Gaussian Avatars** [3DV2025] [project](https://initialneil.github.io/DEGAS.html)
 <br>
 **Zhijing Shao**,Duotun Wang, Qing-Yao Tian, Yao-Dong Yang, Hengyu Meng, Zeyu Cai, Bo Dong, Yu Zhang, Kang Zhang, Zeyu Wang
