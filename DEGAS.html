@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DEGAS: Detailed Expressions on Full-Body Gaussian Avatars</title>
+    <!-- Bootstrap -->
+    <link href="projectpages/DEGAS/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>DEGAS: <b>D</b>etailed <b>E</b>xpressions on Full-Body <b>G</b>aussian <b>A</b>vatar<b>s</b></h2>
+            <h6 style="color:#5a6268;">
+              3DV 2025 <br>
+              <a target="_blank" href="http://arxiv.org/abs/2408.10588">
+                <img src="https://img.shields.io/badge/arXiv-2408.10588-b31b1b.svg" alt="arXiv Paper"/>
+              </a>
+              <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Finitialneil.github.io%2FDEGAS&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+            </h6>
+            <hr>
+
+            <h6> 
+              <a href="https://initialneil.github.io/" target="_blank">Zhijing Shao</a><sup>1,2</sup>,
+              <a href="https://duotun.github.io/" target="_blank">Duotun Wang</a><sup>1</sup>,
+              <a href="https://github.com/LetTucee-T" target="_blank">Qing-Yao Tian</a><sup>2</sup>,
+              <a href="https://orcid.org/0009-0007-5760-4373" target="_blank">Yao-Dong Yang</a><sup>1</sup>,
+              <a href="https://hengyumeng.github.io/" target="_blank">Hengyu Meng</a><sup>1</sup>,
+              <br>
+              <a href="https://github.com/zcai0612" target="_blank">Zeyu Cai</a><sup>1</sup>,
+              <a href="https://openreview.net/profile?id=~BO_DONG15" target="_blank">Bo Dong</a><sup>4</sup>,
+              <a href="https://github.com/yuzhangiot/yuzhangiot/tree/main" target="_blank">Yu Zhang</a><sup>2</sup>,
+              <a href="https://cma.hkust-gz.edu.cn/people/kang-zhang/" target="_blank">Kang Zhang</a><sup>1,3</sup>,
+              <a href="https://cislab.hkust-gz.edu.cn/members/zeyu-wang/" target="_blank">Zeyu Wang</a><sup>1,3*</sup>
+            </h6>
+
+            <p>
+              <sup>1</sup>The Hong Kong University of Science and Technology (Guangzhou)
+              <br>
+              <sup>2</sup><a href="https://www.prometh.xyz/" target="_blank">Prometheus Vision Technology Co., Ltd.</a>
+              <br>
+              <sup>3</sup>The Hong Kong University of Science and Technology
+            	<br>
+              <sup>4</sup>Swinburne University of Technology
+            	<br>
+              <sup>*</sup>
+              Corresponding author @ 
+              <a href="https://cislab.hkust-gz.edu.cn/" target="_blank">Creative Intelligence and Synergy Lab</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="http://arxiv.org/abs/2408.10588" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <!-- <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light disabled" href="https://www.youtube.com/watch?v=IzC-fLvdntA" role="button" target="_blank">
+                  <i class="fa fa-youtube"></i> Video</a></p>
+              </div> -->
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/initialneil/DEGAS" role="button" target="_blank">
+                    <i class="fa fa-github"></i> Code (Coming)</a></p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/initialneil/DEGAS" role="button" target="_blank">
+                    <i class="fa fa-file-archive-o"></i> Dataset (Coming)</a></p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+          	
+            <video controls autoplay loop muted style="outline:none; width:60%">
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/DEGAS-Teaser.mp4" type="video/mp4" />
+              DEGAS-Teaser
+            </video>
+
+            <h6 style="color:#8899a5">
+              We present <b>DEGAS</b> (Detailed Expressions on Full-Body Gaussian Avatars), 
+              the first 3D Gaussian Splatting (3DGS)-based modeling of 
+              <br>
+              full-body avatars with rich facial expressions.
+            </h6>
+          	<img src="https://github.com/initialneil/DEGAS/raw/master/assets/Framework.PNG" width="100%" alt=""/>
+              <br><br>
+            <p class="text-left">
+              Although neural rendering has made significant advancements in creating lifelike, animatable full-body and head avatars, incorporating detailed expressions into full-body avatars remains largely unexplored.
+              We present DEGAS, the first 3D Gaussian Splatting (3DGS)-based modeling method for full-body avatars with rich facial expressions.
+              Trained on multiview videos of a given subject, our method learns a conditional variational autoencoder that takes both the body motion and facial expression as driving signals to generate Gaussian maps in the UV layout.
+              To drive the facial expressions, instead of the commonly used 3D Morphable Models (3DMMs) in 3D head avatars, we propose to adopt the expression latent space trained solely on 2D portrait images, bridging the gap between 2D talking faces and 3D avatars. 
+              Leveraging the rendering capability of 3DGS and the rich expressiveness of the expression latent space, the learned avatars can be reenacted to reproduce photorealistic rendering images with subtle and accurate facial expressions.
+              Experiments on an existing dataset and our newly proposed dataset of full-body talking avatars demonstrate the efficacy of our method. 
+              We also propose an audio-driven extension of our method with the help of 2D talking faces, opening new possibilities to interactive AI agents.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Watch Video</h3>
+            <hr style="margin-top:0px">
+          	
+            <video controls style="outline:none; width:60%">
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/DEGAS.mp4" type="video/mp4" />
+              DEGAS Video
+            </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>DREAMS Avatar Dataset</h3>
+            <hr style="margin-top:0px">
+            <p class="text-left">
+              We propose DREAMS Avatar Dataset, including multi-view captures of 6 subjects. 
+              Each subject performs two sequences. The first sequence is of standard body motions and required facial expressions including smile, laugh, angry, surprise, etc,. 
+              The second sequence is a freestyle.
+            </p>
+
+            <h5 class="text-left">Sequence 1 - render by DEGAS</h5>
+            <video controls style="outline:none; width:100%">
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1-replay-s.mp4" type="video/mp4" />
+              C1-replay
+            </video>
+            <!-- <p>&nbsp;</p>
+            <p>&nbsp;</p> -->
+
+            <h5 class="text-left">Sequence 2 - render by DEGAS</h5>
+            <table style="outline:none; width:100%">
+              <tbody>
+                <tr>
+                  <td>
+                    <video controls autoplay loop muted style="outline:none; width:100%">
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P1C2.mp4" type="video/mp4" />
+                      C1_80w_P1C2
+                    </video>
+                  </td>
+                  <td>
+                    <video controls autoplay loop muted style="outline:none; width:100%">
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P2C2.mp4" type="video/mp4" />
+                      C1_80w_P2C2
+                    </video>
+                  </td>
+                  <td>
+                    <video controls autoplay loop muted style="width:100%">
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P3C2.mp4" type="video/mp4" />
+                      C1_80w_P3C2
+                    </video>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Person 1 Sequence 2</th>
+                  <th scope="row">Person 2 Sequence 2</th>
+                  <th scope="row">Person 3 Sequence 2</th>
+                </tr>
+                <tr>
+                  <td>
+                    <video controls autoplay loop muted style="width:100%">
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P4C2.mp4" type="video/mp4" />
+                      C1_80w_P4C2
+                    </video>
+                  </td>
+                  <td>
+                    <video controls autoplay loop muted style="width:100%">
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P5C2.mp4" type="video/mp4" />
+                      C1_80w_P5C2
+                    </video>
+                  </td>
+                  <td>
+                    <video controls autoplay loop muted style="width:100%">
+                      <source src="https://github.com/initialneil/DEGAS/raw/master/assets/C1_80w_P6C2.mp4" type="video/mp4" />
+                      C1_80w_P6C2
+                    </video>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Person 4 Sequence 2</th>
+                  <th scope="row">Person 5 Sequence 2</th>
+                  <th scope="row">Person 6 Sequence 2</th>
+                </tr>
+              </tbody>
+            </table>
+
+
+          </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+
+  <section>
+    <div class="container">
+
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Reenactment</h3>
+            <hr style="margin-top:0px">
+
+            <h5 class="text-left">All Reenacted by Person 1's Sequence 2</h5>
+            <video controls style="width:100%">
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/P1C2-P123456_extract_exp_C1C2_face_mix.mp4" type="video/mp4" />
+              P1C2-P123456
+            </video>
+            <p>&nbsp;</p>
+
+            <h5 class="text-left">Audio-driven. Expressions generated by 
+              <a href="https://github.com/OpenTalker/SadTalker" target="_blank">SadTalker</a>
+              and extracted by 
+              <a href="https://github.com/OpenTalker/DPE" target="_blank">DPE</a>
+            </h5>
+            <video controls style="width:100%">
+              <source src="https://github.com/initialneil/DEGAS/raw/master/assets/audio-driven.mp4" type="video/mp4" />
+              P1C2-P123456
+            </video>
+            <p>&nbsp;</p>
+
+          </div>
+      </div>
+      
+    </div>
+  </section>
+  <br><br>
+  
+  <!-- citing -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>
+@inproceedings{shao2025degas,
+  title = {{DEGAS: Detailed Expressions on Full-Body Gaussian Avatars}},
+  author = {Zhijing Shao and Duotun Wang and Qing-Yao Tian and Yao-Dong Yang and Hengyu Meng and Zeyu Cai and Bo Dong and Yu Zhang and Kang Zhang and Zeyu Wang},
+  booktitle = {Proceedings of the International Conference on 3D Vision (3DV)},
+  year = {2025}
+}
+</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center" style="margin-bottom:10px">
+      <a href="index.html">← Back to Homepage</a>
+  </footer>
+
+</body>
+</html>
