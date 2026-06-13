@@ -169,6 +169,33 @@ li {
     background-color: #fafafa;
     border-radius: 4px;
     border-left: 4px solid #4a90e2;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.publication-thumb {
+    flex: 0 0 200px;
+    height: 110px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.publication-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.publication-info {
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .publication-title {
@@ -287,8 +314,19 @@ footer {
     .image-row {
         flex-direction: column;
     }
-    
+
     .image-row img {
         max-width: 100%;
+    }
+
+    .publication {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .publication-thumb {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 160px;
     }
 }
