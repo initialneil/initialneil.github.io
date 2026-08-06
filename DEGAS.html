@@ -66,11 +66,11 @@
               </div> -->
               <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/initialneil/DEGAS" role="button" target="_blank">
-                    <i class="fa fa-github"></i> Code (Coming)</a></p>
+                    <i class="fa fa-github"></i> Code</a></p>
               </div>
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/initialneil/DEGAS" role="button" target="_blank">
-                    <i class="fa fa-file-archive-o"></i> Dataset (Coming)</a></p>
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://huggingface.co/datasets/initialneil/DREAMS-AVATAR" role="button" target="_blank">
+                    &#129303; Dataset</a></p>
               </div>
             </div>
             
@@ -142,9 +142,26 @@
             <h3>DREAMS Avatar Dataset</h3>
             <hr style="margin-top:0px">
             <p class="text-left">
-              We propose DREAMS Avatar Dataset, including multi-view captures of 6 subjects. 
-              Each subject performs two sequences. The first sequence is of standard body motions and required facial expressions including smile, laugh, angry, surprise, etc,. 
+              We propose DREAMS Avatar Dataset, including multi-view captures of 6 subjects.
+              Each subject performs two sequences. The first sequence is of standard body motions and required facial expressions including smile, laugh, angry, surprise, etc,.
               The second sequence is a freestyle.
+            </p>
+
+            <p class="text-left">
+              The dataset is now released on HuggingFace, re-registered to pure SMPL-X:
+              10 captures of 6 subjects, 32 hardware-synchronized calibrated views per capture,
+              matted RGB with alpha at 2048x1500, each capture shipping one consolidated SMPL-X fit
+              (300 shape coefficients, 100 expression coefficients, jaw, eyes, and full axis-angle hands)
+              plus loader and conversion scripts. Released under CC BY-NC 4.0.
+              The training and inference code is released in the DEGAS repository.
+            </p>
+
+            <p class="text-left mb-4">
+              <a class="btn btn-light" href="https://huggingface.co/datasets/initialneil/DREAMS-AVATAR" role="button" target="_blank">
+                &#129303; DREAMS-AVATAR on HuggingFace</a>
+              &nbsp;
+              <a class="btn btn-light" href="https://github.com/initialneil/DEGAS" role="button" target="_blank">
+                <i class="fa fa-github"></i> DEGAS Code</a>
             </p>
 
             <h5 class="text-left">Sequence 1 - render by DEGAS</h5>
