@@ -8,14 +8,15 @@ keywords: Zhijing Shao, Neil Shao, Computer Vision, 3D Reconstruction, Gaussian 
 
 ![SHAO Zhijing (Neil)](assets/img/neil-1.jpg)
 name: Neil
-subname: Zhijing SHAO
+subname: Dr. Zhijing SHAO
 tagline: We can only observe the high dimensional world from our low dimensional projection.
 links: [GitHub](https://github.com/initialneil) [Google Scholar](https://scholar.google.com/citations?user=UUrJKSkAAAAJ&hl=en&oi=ao) [DBLP](https://dblp.org/pid/359/4184.html)
 links: [Kandao](https://www.kandaovr.com/) [Prometheus Vision](https://www.prometh.xyz/)
 
 ## About
 
-PhD in CMA, HKUST(GZ), supervised by [Prof. Kang ZHANG](https://facultyprofiles.hkust-gz.edu.cn/thrust-faculties?code=10011A10000000000H2A) and [Prof. Zeyu WANG](https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/WANG-Zeyu/zeyuwang). Senior Researcher, Collov Labs.
+PhD in CMA, HKUST(GZ), supervised by [Prof. Kang ZHANG](https://facultyprofiles.hkust-gz.edu.cn/thrust-faculties?code=10011A10000000000H2A) and [Prof. Zeyu WANG](https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/WANG-Zeyu/zeyuwang).
+Senior Researcher, Collov Labs.
 
 ## Short Bio
 

@@ -211,7 +211,7 @@ html = f'''<!DOCTYPE html>
     </section>
 
     <footer>
-        <p>© 2026 Zhijing Shao. Hosted on GitHub Pages.</p>
+        <p>© 2026 Dr. Zhijing Shao. Hosted on GitHub Pages.</p>
     </footer>
 </body>
 </html>
