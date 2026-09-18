@@ -1,6 +1,6 @@
 ---
 title: SHAO Zhijing (Neil) - Personal Website
-description: SHAO Zhijing (Neil)'s personal website - PhD student in CMA, HKUST(GZ), specialized in computer vision, 3D reconstruction, and neural rendering.
+description: Dr. Zhijing Shao (Neil)'s personal website - PhD in CMA, HKUST(GZ), Senior Researcher at Collov Labs, specialized in computer vision, 3D reconstruction, and neural rendering.
 keywords: Zhijing Shao, Neil Shao, Computer Vision, 3D Reconstruction, Gaussian Splatting, HKUST, Prometheus Vision
 ---
 
