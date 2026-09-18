@@ -38,13 +38,13 @@ def inline(s):
     return ''.join(out)
 
 def classify(t):
-    if '自我简述' in t: return 'about'
-    if '工作经历' in t: return 'work'
-    if '教育经历' in t: return 'edu'
-    if '荣誉' in t: return 'honor'
-    if '论文发表' in t: return 'papers'
-    if '专利' in t: return 'patents'
-    if '项目介绍' in t: return 'projects'
+    if '自我简述' in t or 'Summary' in t: return 'about'
+    if '工作经历' in t or 'Work' in t or 'Experience' in t: return 'work'
+    if '教育经历' in t or 'Education' in t: return 'edu'
+    if '荣誉' in t or 'Honor' in t or 'Award' in t: return 'honor'
+    if '论文发表' in t or 'Publication' in t: return 'papers'
+    if '专利' in t or 'Patent' in t: return 'patents'
+    if '项目介绍' in t or 'Project' in t: return 'projects'
     return 'other'
 
 BODY=[]; name='邵志兢'; section=None; work_first=True; proj_open=False; projgrid_open=False
@@ -118,8 +118,8 @@ for raw in md:
         continue
     t=line.strip()
     if section=='papers' and paper is not None:
-        if t.startswith('作者'): paper['au']=re.sub(r'^作者[：:]\s*','',t)
-        elif t.startswith('简介'): paper['de']=re.sub(r'^简介[：:]\s*','',t)
+        if re.match(r'^(作者|Authors?)\s*[：:]',t): paper['au']=re.sub(r'^(作者|Authors?)\s*[：:]\s*','',t)
+        elif re.match(r'^(简介|Summary|Abstract)\s*[：:]',t): paper['de']=re.sub(r'^(简介|Summary|Abstract)\s*[：:]\s*','',t)
     elif section=='about': BODY.append(f'<p class="body">{inline(t)}</p>')
     elif section in ('edu','honor'): BODY.append(f'<p class="cont">{inline(t)}</p>')
     else: BODY.append(f'<p class="body">{inline(t)}</p>')
