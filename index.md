@@ -78,6 +78,11 @@ Hengyu Meng, Duotun Wang, **Zhijing Shao**, Ligang Liu, Zeyu Wang
 [paper](https://dl.acm.org/doi/10.1145/3757374.3771441)
 Duotun Wang, Yuhang Li, **Zhijing Shao**, Wanjun Lv, Liuxin Zhang, Mingming Fan, Zeyu Wang
 
+### [CGI2025] Hi-Reco: High-Fidelity Real-Time Conversational Digital Humans
+![](assets/pubs/hireco_teaser.png)
+[arxiv](https://arxiv.org/abs/2511.12662)
+Hongbin Huang, Junwei Li, Tianxin Xie, Zhuang Li, Cekai Weng, Yaodong Yang, Yue Luo, Li Liu, Jing Tang, **Zhijing Shao**, Zeyu Wang
+
 ### [3DV2025] DEGAS: Detailed Expressions on Full-Body Gaussian Avatars
 ![](assets/pubs/degas_teaser.png)
 [project](DEGAS.html) [arxiv](http://arxiv.org/abs/2408.10588) [code](https://github.com/initialneil/DEGAS)
