@@ -154,7 +154,7 @@ b{ font-weight:700; }
 .bp{ display:flex; padding-left:2.5mm; }
 .bp .mk{ flex:0 0 4.9mm; }
 .bp .tx{ flex:1; }
-.pub{ display:flex; gap:3mm; padding-left:2mm; padding-right:2mm; margin-top:2.4mm; break-inside:avoid; }
+.pub{ display:flex; gap:3mm; padding-left:2mm; padding-right:2mm; margin-top:0.8mm; break-inside:avoid; }
 .pub-thumb{ flex:0 0 24mm; }
 .pub-thumb img{ width:24mm; height:14mm; object-fit:contain; background:#f3f3f3; display:block; }
 .pub-text{ flex:1; }
